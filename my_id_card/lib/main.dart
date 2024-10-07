@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(const MaterialApp(
+    debugShowCheckedModeBanner: false,
     home: MyIdCard(),
   ));
 }
@@ -54,12 +55,12 @@ class _MyIdCardState extends State<MyIdCard> {
           children: [
             Center(
               child: CircleAvatar(
-                backgroundImage: AssetImage('images/mnpo.jpg'),
+                backgroundImage: AssetImage('assets/mnpo.jpg'),
                 radius: 60.0,
               ),
             ),
             Divider(
-              height: 90.0,
+              height: 60.0,
               color: Colors.grey,
             ),
             Text('NAME',
@@ -72,7 +73,7 @@ class _MyIdCardState extends State<MyIdCard> {
                 style: TextStyle(
                   color: Colors.amber,
                   letterSpacing: 2.0,
-                  fontSize: 28.0,
+                  fontSize: 20.0,
                   fontWeight: FontWeight.bold,
                 )),
             SizedBox(height: 30.0),
@@ -86,7 +87,7 @@ class _MyIdCardState extends State<MyIdCard> {
                 style: TextStyle(
                   color: Colors.amber,
                   letterSpacing: 2.0,
-                  fontSize: 28.0,
+                  fontSize: 20.0,
                   fontWeight: FontWeight.bold,
                 )),
             SizedBox(height: 30.0),
@@ -115,7 +116,7 @@ class _MyIdCardState extends State<MyIdCard> {
                   'naingpaingoo@gmail.com',
                   style: TextStyle(
                     color: Colors.grey,
-                    fontSize: 18.0,
+                    fontSize: 15.0,
                     letterSpacing: 1.0,
                   ),
                 ),
@@ -133,7 +134,7 @@ class _MyIdCardState extends State<MyIdCard> {
                   '+959790663667',
                   style: TextStyle(
                     color: Colors.grey,
-                    fontSize: 18.0,
+                    fontSize: 15.0,
                     letterSpacing: 1.0,
                   ),
                 ),
